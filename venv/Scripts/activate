@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\fedyksr\Desktop\dento.tn\venv"
+VIRTUAL_ENV="C:\Users\fedyksr\Desktop\New folder\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

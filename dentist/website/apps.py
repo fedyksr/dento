@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DentoConfig(AppConfig):
+class WebsiteConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'dento'
+    name = 'website'
