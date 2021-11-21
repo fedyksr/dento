@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,11 @@
 
   <!-- Title -->
   <title>Dento - Dentist &amp; Medical HTML Template</title>
-
   <!-- Favicon -->
-  <link rel="icon" href="./img/core-img/favicon.ico">
+  <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'website/css/style.css'%}">
 
 </head>
 
@@ -62,7 +62,7 @@
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
             <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+            <a class="nav-brand" href="index.html"><img src="{%static 'website/img/core-img/logo.png'%}" alt=""></a>
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -136,7 +136,7 @@
     <!-- Welcome Slides -->
     <div class="welcome-slides owl-carousel">
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({%static 'website/img/bg-img/1.jpg'%});">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -156,7 +156,7 @@
       </div>
 
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/2.jpg);">
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({%static 'website/img/bg-img/2.jpg'%});">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -185,7 +185,7 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="./img/bg-img/15.jpg" alt="">
+            <img src="{%static 'website/img/bg-img/15.jpg'%}" alt="">
           </div>
         </div>
         <!-- About Content -->
@@ -281,7 +281,7 @@
   <!-- Cool Facts Area End -->
 
   <!-- Dento Service Area Start -->
-  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/13.jpg');">
+  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({%static 'website/img/bg-img/13.jpg'%});">
     <div class="container">
       <div class="row align-items-center">
         <!-- Service Content -->
@@ -297,7 +297,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s1.png" alt="">
+                  <img src="{%static 'website/img/core-img/s1.png'%}" alt="">
                   <h6>Teeth Whitening</h6>
                 </div>
               </div>
@@ -305,7 +305,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s2.png" alt="">
+                  <img src="{%static 'website/img/core-img/s2.png'%}" alt="">
                   <h6>Missing Teeth</h6>
                 </div>
               </div>
@@ -313,7 +313,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s3.png" alt="">
+                  <img src="{%static 'website/img/core-img/s3.png'%}" alt="">
                   <h6>Teeth Whitening</h6>
                 </div>
               </div>
@@ -321,7 +321,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s4.png" alt="">
+                  <img src="{%static 'website/img/core-img/s4.png'%}" alt="">
                   <h6>Cosmetic Dentistry</h6>
                 </div>
               </div>
@@ -329,7 +329,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s5.png" alt="">
+                  <img src="{%static 'website/img/core-img/s5.png'%}" alt="">
                   <h6>Examination</h6>
                 </div>
               </div>
@@ -337,7 +337,7 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="./img/core-img/s1.png" alt="">
+                  <img src="{%static 'website/img/core-img/s1.png'%}" alt="">
                   <h6>Teeth Pain</h6>
                 </div>
               </div>
@@ -348,7 +348,7 @@
         <!-- Video Area -->
         <div class="col-12 col-lg-6">
           <div class="dento-video-area mb-100">
-            <img src="./img/bg-img/14.jpg" alt="">
+            <img src="{%static 'website/img/bg-img/14.jpg'%}" alt="">
             <!-- Play Button -->
             <a href="#" class="video-play-button"><i class="fa fa-play" aria-hidden="true"></i></a>
           </div>
@@ -449,7 +449,7 @@
   <!-- Dento Pricing Table Area End -->
 
   <!-- Book An Oppointment Area Start -->
-  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/12.jpg');">
+  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({%static 'website/img/bg-img/12.jpg'%});">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
@@ -543,7 +543,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/9.png" alt="">
+            <img src="{%static 'website/img/bg-img/9.png'%}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -564,7 +564,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/10.png" alt="">
+            <img src="{%static 'website/img/bg-img/10.png'%}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -585,7 +585,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/11.png" alt="">
+            <img src="{%static 'website/img/bg-img/11.png'%}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -608,7 +608,7 @@
   <!-- ***** Dento Dentist Area End ***** -->
 
   <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/7.jpg');">
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({%static 'website/img/bg-img/7.jpg'%});">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -618,7 +618,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg'%}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -633,7 +633,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg'%}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -648,7 +648,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg'%}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -683,7 +683,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="single-blog-item mb-100">
             <a href="./blog-details.html">
-              <img src="./img/bg-img/4.jpg" alt="">
+              <img src="{%static 'website/img/bg-img/4.jpg'%}" alt="">
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
@@ -701,7 +701,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="single-blog-item mb-100">
             <a href="./blog-details.html">
-              <img src="./img/bg-img/5.jpg" alt="">
+              <img src="{%static 'website/img/bg-img/5.jpg'%}" alt="">
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
@@ -719,7 +719,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="single-blog-item mb-100">
             <a href="./blog-details.html">
-              <img src="./img/bg-img/6.jpg" alt="">
+              <img src="{%static 'website/img/bg-img/6.jpg'%}" alt="">
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
@@ -738,13 +738,13 @@
   <!-- ***** Blog Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
-  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/3.jpg);">
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({%static 'website/img/bg-img/3.jpg'%});">
     <div class="container">
       <div class="row">
         <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
-            <a href="./index.html" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
+            <a href="./index.html" class="d-block mb-4"><img src="{%static 'website/img/core-img/logo.png'%}" alt=""></a>
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> 28 Jackson Street, Chicago, 7788569 USA</p>
@@ -840,15 +840,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
   <!-- ******* All JS ******* -->
   <!-- jQuery js -->
-  <script src="js/jquery.min.js"></script>
+  <script src="{%static 'website/js/jquery.min.js'%}"></script>
   <!-- Popper js -->
-  <script src="js/popper.min.js"></script>
+  <script src="{%static 'website/js/popper.min.js'%}"></script>
   <!-- Bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{%static 'website/js/bootstrap.min.js'%}"></script>
   <!-- All js -->
-  <script src="js/dento.bundle.js"></script>
+  <script src="{%static 'website/js/dento.bundle.js'%}"></script>
   <!-- Active js -->
-  <script src="js/default-assets/active.js"></script>
+  <script src="{%static 'website/js/default-assets/active.js'%}"></script>
 
 </body>
 
