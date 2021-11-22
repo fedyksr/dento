@@ -38,8 +38,8 @@
               <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                 offer you.</p>
               <div class="welcome-btn-group">
-                <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-                <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
+                <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
               </div>
             </div>
           </div>
@@ -335,7 +335,8 @@
       <div class="col-12">
         <!-- Appointment Form -->
         <div class="appointment-form">
-          <form action="#" method="post">
+          <form action="{% url 'appointment' %}" method="post">
+            {% csrf_token %}
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group mb-30">
@@ -362,20 +363,22 @@
                   <select name="your-scheldule" class="form-control">
                     <option value="Choose Your Scheldule">Choose Your Scheldule</option>
                     <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                    <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                    <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                    <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                    <option value="11 AM to 12 PM">10 AM to 12 PM</option>
+                    <option value="2 PM to 4 PM">2 PM to 5 PM</option>
+                    <option value="8 PM to 10 PM">6 PM to 10 PM</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group mb-30">
                   <select name="your-time" class="form-control">
-                    <option value="Choose Your Time">Choose Your Scheldule</option>
-                    <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                    <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                    <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                    <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                    <option value="Choose Your Time">Choose Your Date</option>
+                    <option value="Lundi">Lundi</option>
+                    <option value="Mardi">Mardi</option>
+                    <option value="Mercredi">Mercredi</option>
+                    <option value="Jeudi">Jeudi</option>
+                    <option value="Vendredi">Vendredi</option>
+                    <option value="Samedi">Samedi</option>
                   </select>
                 </div>
               </div>
