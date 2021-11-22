@@ -41,14 +41,14 @@ def appointment (request):
         your_time = request.POST['your-time']
         your_message = request.POST['your-message']
         #send_mail
-        '''
+        appointment = "Name : "+your_name+" phone: "+your_phone+" Email: "+your_email+"\n Address: "+your_address+"\n Schedule: "+your_scheldule+" Day: "+your_time+"\n Message: "+your_message
         send_mail(
-            message_name , #subject
-            message , #message
-            message_email, #from email
+            'Appointment Request' , #subject
+            appointment , #message
+            your_email, #from email
             ['fedyksr@gmail.com'] , #To email
         )
-        '''
+        
         
         return render(request, 'appointment.html',{
             'your_name': your_name,
